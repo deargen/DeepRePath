@@ -1,0 +1,61 @@
+{
+    "gpu": "all",
+    "img_root_path": "../data/images/",
+    "anno_files": [
+        "../data/clinical_data/clinical_data.csv"
+    ],
+    "aug_anno_files": [
+        "../data/clinical_data/clinical_data_aug.csv"
+    ],
+    "train_hospi_name": [
+        "Seo",
+        "Seo2",
+        "Inc",
+        "Uij"
+    ],
+    "test_hospi_name": [
+        "Cau",
+        "Buc",
+        "Yeo"
+    ],
+    "use_x": [
+        "x400",
+        "x100"
+    ],
+    "color_norm": false,
+    "calibration": false,
+    "cascading": false,
+    "pretrain": "",
+    "pretrain_file": "",
+    "crop_div_x400": 1,
+    "crop_div_x200": 1,
+    "crop_div_x100": 1,
+
+    "patch_sel_iter": 1,
+    "patch_sel_method": "label_prob",
+    "thres_h_x400": [0.5, 0.3, 0.1],
+    "thres_l_x400": [0.5, 0.3, 0.1],
+    "thres_h_x200": [0.5, 0.3, 0.1],
+    "thres_l_x200": [0.5, 0.3, 0.1],
+    "thres_h_x100": [0.5, 0.3, 0.1],
+    "thres_l_x100": [0.5, 0.3, 0.1],
+    "patch_thres_idx": 0,
+
+    "do_remove_all_model": false,
+    "do_save_crop": false,
+    "do_train_patch_sel": false,
+    "do_train_kfold": true,
+    "do_train_full": true,
+    "do_train_full_kfold": false,
+    "ext_val_models": ["full"],
+    "do_train_set_combination": false,
+    "do_data_augmentation": true,
+    
+    "do_load_dump_patch_sel": false,
+    "do_load_dump_train_kfold": false,
+    "do_load_dump_train_full": false,
+    "do_load_dump_train_full_kfold": false,
+    "do_load_dump_exst_val": false,
+
+    "do_save_crop_only": false
+}
